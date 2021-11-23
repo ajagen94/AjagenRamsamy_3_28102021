@@ -50,6 +50,8 @@
     margin-left: 15px;
     margin-right: 15px;}
 
+    #Menu{background-color: #f2f2f2;}
+
     .contenumenu {
         display: flex;
         flex-direction: column;
@@ -61,69 +63,16 @@
         margin-top: -50px;
     }
 
-    .entree1{border-radius: 25px;
+    .carte{border-radius: 25px;
         margin-left: 15px;
         width:90%;
         height:100px;
         background-color: white;
         font-size: 14px;
     }
-    .entree2{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .entree3{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .plat1{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .plat2{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .plat3{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .dessert1{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .dessert2{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
-    .dessert3{border-radius: 25px;
-        margin-left: 15px;
-        width:90%;
-        height:100px;
-        background-color: white;
-        font-size: 14px;
-    }
+
+    .titremenu{}
+
     .commande{ display: flex;
         justify-content: center;
     align-items: center;
