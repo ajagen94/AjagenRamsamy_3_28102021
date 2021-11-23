@@ -172,16 +172,16 @@
 
     .blocimg {
         display: flex;
-        background-color: white;
+        background-color: indianred;
         border-radius: 10px 10px 10px 10px;
-        width: 90%;
+        width: 400;
         height: 230px;
         margin-left: 15px;
         margin-bottom: 10px;
     }
 
     .imgresto {
-        width: 100%;
+        width: 370px;
         height: 150px;
         object-fit: cover;
     }
