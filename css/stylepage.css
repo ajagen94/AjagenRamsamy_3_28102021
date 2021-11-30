@@ -23,9 +23,11 @@
         align-items: center;
         justify-content: flex-start;
         margin-left: 15px;
-
-
+        color: black;
+        text-decoration: none;
     }
+
+    a:visited{ color:black;}
 
     .logoheader {
         display: flex;
@@ -114,6 +116,7 @@ padding-bottom: 20px;}
         background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         cursor: pointer;
+        color:white;
     }
 
     #baspage {
