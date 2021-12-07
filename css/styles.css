@@ -98,8 +98,13 @@
         background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         cursor: pointer;
-
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+        transform: scale(1.15);
     }
+}
+        
 
     .contenufonctionnement {
         display: flex;
@@ -185,7 +190,7 @@
     .imgresto {
         width: 100%;
         height: 180px;
-        margin-top:-17px;
+        margin-top:-25px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
@@ -204,12 +209,12 @@
         justify-content: center;
         position: relative;
         background-color: #99E2D0;
-        color: lightseagreen;
-        border: solid 1px #99E2D0;
+        color: #347C6B;
+        border: solid 5px #99E2D0;
         font-size: 13px;
         font-weight: bold;
         top: 10%;
-        width: 65px;
+        width: 70px;
         margin-left:74%;
     }
 
@@ -257,6 +262,10 @@
         color: white;
         width: 100px;
     }
+
+    .mail{  text-decoration: none;
+            color:white;
+            cursor: pointer;}
 
 }
 /*responsive tablet-pc*/
@@ -360,14 +369,18 @@
         background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         cursor: pointer;
-
+        transform: scale(1);
+        transition-property:all;
+        transition-duration: 400ms;{}
+        &:hover {
+        transform: scale(1.15);}
     }
 
     .contenufonctionnement {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        margin-left: 15px;
+        margin-left: 0px;
         margin-top: 20px;
     }
 
@@ -396,6 +409,7 @@
         border-radius: 18px 18px 18px 18px;
         height: 60px;
         width: 90%;
+        margin-left:15px;
         margin-top: 20px;
         align-items: center;
         box-shadow: lightgrey 0px 6px 11px 0px;
@@ -447,7 +461,7 @@
     .imgresto {
         width: 100%;
         height: 180px;
-        margin-top:-17px;
+        margin-top:-31px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-fit: cover;
@@ -466,12 +480,13 @@
         justify-content: center;
         position: relative;
         background-color: #99E2D0;
-        color: lightseagreen;
-        border: solid 1px #99E2D0;
-        font-size: 13px;
+        color: #347C6B;
+        border: solid 6px #99E2D0;
+        font-size: 16px;
         font-weight: bold;
         top: 10%;
-        width: 65px;
+        height: 20px;
+        width: 80px;
         margin-left:80%;
     }
 
@@ -519,5 +534,8 @@
         color: white;
         width: 100px;
     }
+    .mail{  text-decoration: none;
+        color:white;
+        cursor: pointer;}
 
 }

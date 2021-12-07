@@ -92,8 +92,9 @@
         border-radius: 25px;
         margin-left: 15px;
         width: 90%;
-        height: 100px;
+        height: 80px;
         background-color: white;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         font-size: 14px;
         margin-bottom: 20px;
     }
@@ -138,6 +139,9 @@ padding-bottom: 20px;}
         color: white;
         width: 100px;
     }
+    .mail{  text-decoration: none;
+        color:white;
+        cursor: pointer;}
 
 }
 /*responsive tablet-pc*/
@@ -155,7 +159,7 @@ padding-bottom: 20px;}
     .top {
         display: flex;
         flex-direction: row;
-        width: 75%;
+        width: 60%;
         align-items: center;
         justify-content: space-between;
 
@@ -202,6 +206,7 @@ padding-bottom: 20px;}
         background-color: #f2f2f2;
     }
 
+
     .titremenu {
         font-size: 14px;
         border-bottom: solid 2px #99E2D0;
@@ -211,6 +216,23 @@ padding-bottom: 20px;}
         margin-bottom: 20px;
 
     }
+   
+
+    .coeur1 :hover{transform: scale(1.13);
+    background-color:  #9356DC}
+
+    .coeur1{
+        background-color: rgba(1, 28, 55, 0);
+        
+       border-radius: 10rem;
+        cursor: pointer;
+        overflow: hidden;
+     position: relative;
+     transition: transform 450ms, background-color 300ms 150ms;
+   
+    
+}
+    
 
     .contenumenu {
         display: flex;
@@ -227,16 +249,19 @@ padding-bottom: 20px;}
     .prix{margin-right: 5px;
         margin-top: 20px;}
 
+    .prix:hover{ background-color: #99E2D0;}
+
 
     .carte {
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-radius: 25px;
-        margin-left: 15px;
+        margin-left: 4%;
         width: 90%;
         height: 100px;
         background-color: white;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         font-size: 14px;
         margin-bottom: 20px;
     }
@@ -281,5 +306,8 @@ padding-bottom: 20px;}
         color: white;
         width: 100px;
     }
+    .mail{  text-decoration: none;
+        color:white;
+        cursor: pointer;}
 
 }
