@@ -3,7 +3,88 @@
         font-family: 'Roboto';
         src: url(Roboto/Roboto-Regular.ttf);
     }
-
+    @keyframes loading{
+        0%{
+          transform:scale(1);
+          opacity:1;
+          z-index:2;
+        }
+        20%{
+          transform:scale(1);
+          opacity:1;
+        }
+        50%{
+          transform:scale(1);
+          opacity:0.75;
+        }
+        70%{
+          transform:scale(1);
+          opacity:0.5;
+        }
+        80%{
+          transform:scale(1);
+          opacity:0.2;
+        }
+        90%{
+          transform:scale(1);
+          opacity:0.001;
+          z-index:2;
+        }
+        100%{
+          transform:scale(0);
+          opacity:0;
+        }
+    }
+    @keyframes infinite-spinning {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(5turn);
+        }
+    }
+    @keyframes spin{
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+    }
+    @keyframes appear{
+        0%{
+          opacity:0;
+        }
+        60%{
+          opacity:0;
+        }
+        100%{
+          opacity:1;
+        }
+    }
+    .load{
+        width:100%;
+        position:absolute;
+        height:100%;
+        opacity:0;
+        background-color:#F6F6F6;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .load{
+        animation-name: loading;
+        animation-duration: 3500ms;
+        
+      }
+      .load > .spinner{
+        box-shadow:0px 0px 30px 20px #99E2D0, 0px 0px 30px 30px #ff79da, 0px 0px 30px 10px #9356DC;
+        border-radius:50%;
+        padding:50px 55px 50px 55px;
+        height:50px;
+        animation-name: infinite-spinning;
+        animation-duration: 5500ms;
+      }
     BODY {
         background-color: white;
         font-family: Roboto;
@@ -99,11 +180,11 @@
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
         cursor: pointer;
         transform: scale(1);
-        transition: transform 400ms;
-        &:hover {
+        transition: transform 400ms;}
+        .explorer:hover {
         transform: scale(1.15);
     }
-}
+
         
 
     .contenufonctionnement {
@@ -274,6 +355,88 @@
         font-family: 'Roboto';
         src: url(Roboto/Roboto-Regular.ttf);
     }
+    @keyframes loading{
+        0%{
+          transform:scale(1);
+          opacity:1;
+          z-index:2;
+        }
+        20%{
+          transform:scale(1);
+          opacity:1;
+        }
+        50%{
+          transform:scale(1);
+          opacity:0.75;
+        }
+        70%{
+          transform:scale(1);
+          opacity:0.5;
+        }
+        80%{
+          transform:scale(1);
+          opacity:0.2;
+        }
+        90%{
+          transform:scale(1);
+          opacity:0.001;
+          z-index:2;
+        }
+        100%{
+          transform:scale(0);
+          opacity:0;
+        }
+    }
+    @keyframes infinite-spinning {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(5turn);
+        }
+    }
+    @keyframes spin{
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+    }
+    @keyframes appear{
+        0%{
+          opacity:0;
+        }
+        60%{
+          opacity:0;
+        }
+        100%{
+          opacity:1;
+        }
+    }
+    .load{
+        width:100%;
+        position:absolute;
+        height:100%;
+        opacity:0;
+        background-color:#F6F6F6;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .load{
+        animation-name: loading;
+        animation-duration: 3500ms;
+        
+      }
+      .load > .spinner{
+        box-shadow:0px 0px 30px 20px #99E2D0, 0px 0px 30px 30px #ff79da, 0px 0px 30px 10px #9356DC;
+        border-radius:50%;
+        padding:50px 55px 50px 55px;
+        height:50px;
+        animation-name: infinite-spinning;
+        animation-duration: 5500ms;
+      }
 
     BODY {
         background-color: white;
@@ -371,10 +534,11 @@
         cursor: pointer;
         transform: scale(1);
         transition-property:all;
-        transition-duration: 400ms;{}
-        &:hover {
+        transition-duration: 400ms;}
+        
+    .explorer:hover {
         transform: scale(1.15);}
-    }
+    
 
     .contenufonctionnement {
         display: flex;
