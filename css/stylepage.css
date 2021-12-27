@@ -405,7 +405,10 @@ padding-bottom: 20px;}
         margin-top: -50px;
     }
 
-    .textmenu {margin-left: 5px;}
+    .textmenu {
+        margin-left: 5px;
+    width:90%;}
+
     .prix{display: flex;
         
         margin-top: 20px;
