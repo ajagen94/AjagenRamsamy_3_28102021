@@ -3,7 +3,17 @@
         font-family: 'Roboto';
         src: url(Roboto/Roboto-Regular.ttf);
     }
-
+    @keyframes appear{
+        0%{
+          opacity:0;
+        }
+        60%{
+          opacity:0;
+        }
+        100%{
+          opacity:1;
+        }
+    }
     BODY {
         background-color: white;
         font-family: Roboto;
@@ -80,10 +90,75 @@
         margin-top: -50px;
     }
 
+    #appear-1{
+        animation-name:appear;
+        animation-duration:1500ms;
+        animation-delay:0s;
+    }
+    #appear-2{
+        animation-name:appear;
+        animation-duration:2500ms;
+        animation-delay:0s;
+    }
+    #appear-3{
+        animation-name:appear;
+        animation-duration: 3500ms;
+        animation-delay:0s;
+    }
+    #appear-4{
+        animation-name:appear;
+        animation-duration: 1500ms;
+        animation-delay:0s;
+    }
+    #appear-5{
+        animation-name:appear;
+        animation-duration: 2500ms;
+        animation-delay:0s;
+    }
+    #appear-6{
+        animation-name:appear;
+        animation-duration: 3500ms;
+        animation-delay:0s;
+    }
+    #appear-7{
+        animation-name:appear;
+        animation-duration: 1500ms;
+        animation-delay:0s;
+    }
+    #appear-8{
+        animation-name:appear;
+        animation-duration: 2500ms;
+        animation-delay:0s;
+    }
+    #appear-9{
+        animation-name:appear;
+        animation-duration: 3500ms;
+        animation-delay:0s;
+    }
+    
     .textmenu {margin-left: 5px;}
-    .prix{margin-right: 5px;
-        margin-top: 20px;}
+    .prix{display: flex;
+        
+        margin-top: 20px;
+        justify-content: space-between;}
 
+
+    .valide{display: flex;
+        justify-content: center;
+align-items: center;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 24px;
+            background-color: #99E2D0;
+            width:50px;
+            height:80px;
+            transition: transform 330ms ease-in-out;
+            z-index:auto;
+    visibility:hidden;
+    overflow:hidden;
+}
+.check{
+    color:white;
+font-size:25px ;}
 
     .carte {
         display: flex;
@@ -98,7 +173,27 @@
         font-size: 14px;
         margin-bottom: 20px;
     }
+    
 
+    .carte:hover{
+        animation-name:reduc-menu;
+        animation-duration:1s;
+        transform-origin:left 50%;
+        box-shadow: 0px 5px 10px 2px #7e7e7e;
+    }
+    
+    .carte:hover > .valide{
+        transform:translate(-0px,0);
+        visibility:visible;
+    }
+    
+    .carte:hover > .valide > .check{
+        transform: rotate(-360deg);
+        transition: transform 500ms ease-in-out;
+        animation-name: spin;
+        animation-duration:1s;
+    }
+    
 
     #button{display: flex;
         justify-content: center;
@@ -122,7 +217,8 @@ padding-bottom: 20px;}
         transition-property:all;
         transition-duration: 400ms;}
     .commande:hover {
-        transform: scale(1.15);}
+        transform: scale(1.15);
+        box-shadow: 0px 5px 10px 2px #7e7e7e;}
     
 
     #baspage {
@@ -154,6 +250,17 @@ padding-bottom: 20px;}
     @font-face {
         font-family: 'Roboto';
         src: url(Roboto/Roboto-Regular.ttf);
+    }
+    @keyframes appear{
+        0%{
+          opacity:0;
+        }
+        60%{
+          opacity:0;
+        }
+        100%{
+          opacity:1;
+        }
     }
 
     BODY {
@@ -237,21 +344,54 @@ padding-bottom: 20px;}
         animation-duration: 3500ms;
         animation-delay:0s;
     }
+    #appear-4{
+        animation-name:appear;
+        animation-duration: 1500ms;
+        animation-delay:0s;
+    }
+    #appear-5{
+        animation-name:appear;
+        animation-duration: 2500ms;
+        animation-delay:0s;
+    }
+    #appear-6{
+        animation-name:appear;
+        animation-duration: 3500ms;
+        animation-delay:0s;
+    }
+    #appear-7{
+        animation-name:appear;
+        animation-duration: 1500ms;
+        animation-delay:0s;
+    }
+    #appear-8{
+        animation-name:appear;
+        animation-duration: 2500ms;
+        animation-delay:0s;
+    }
+    #appear-9{
+        animation-name:appear;
+        animation-duration: 3500ms;
+        animation-delay:0s;
+    }
 
-    .coeur1 :hover{transform: scale(1.13);
-    background-color:  #9356DC}
-
-    .coeur1{
-        background-color: rgba(1, 28, 55, 0);
-        
-       border-radius: 10rem;
-        cursor: pointer;
-        overflow: hidden;
-     position: relative;
-     transition: transform 450ms, background-color 300ms 150ms;
-   
+    .fa-heart
+    {
+        margin: 30px 30px auto auto; 
+        font-size: 1.3em;
+      
+    }
     
-}
+    .fa-heart:hover{
+        transform: scale(1.1);
+        font-weight: bold;
+        transition:  1s ease; 
+        cursor: pointer;
+        background: linear-gradient(#a25bdc, #e170db);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     
 
     .contenumenu {
@@ -267,11 +407,11 @@ padding-bottom: 20px;}
 
     .textmenu {margin-left: 5px;}
     .prix{display: flex;
-        width: 800px;
+        
         margin-top: 20px;
         justify-content: space-between;}
 
-
+    #montant{margin-left: 80%;}
     .valide{display: flex;
         justify-content: center;
 align-items: center;
@@ -280,6 +420,10 @@ align-items: center;
             background-color: #99E2D0;
             width:85px;
             height:100px;
+            transition: transform 330ms ease-in-out;
+            z-index:auto;
+    visibility:hidden;
+    overflow:hidden;
 }
 .check{
     color:white;
@@ -299,6 +443,25 @@ font-size:35px ;}
         margin-bottom: 20px;
     }
 
+    .carte:hover{
+        animation-name:reduc-menu;
+        animation-duration:1s;
+        transform-origin:left 50%;
+        box-shadow: 0px 5px 10px 2px #7e7e7e;
+    }
+    
+    .carte:hover > .valide{
+        transform:translate(-0px);
+        visibility:visible;
+    }
+    
+    .carte:hover > .valide > .check{
+        transform: rotate(-360deg);
+        transition: transform 500ms ease-in-out;
+        animation-name: spin;
+        animation-duration:1s;
+    }
+    
 
     #button{display: flex;
         justify-content: center;
@@ -322,7 +485,8 @@ padding-bottom: 20px;}
         transition-property:all;
         transition-duration: 400ms;}
     .commande:hover {
-        transform: scale(1.15);}
+        transform: scale(1.15);
+        box-shadow: 0px 5px 10px 2px #7e7e7e;}
 
     #baspage {
         width: 100%;
